@@ -1,11 +1,9 @@
 export const Person = ({ person }) => {
   return (
     <>
-      <h2 className="Person__name">{`My name is ${person.name}`}</h2>
+      <h2 className="Person__name">My name is {person.name}</h2>
 
-      {person.age && (
-        <p className="Person__age">I am {person.age}</p>
-      )}
+      {person.age && <p className="Person__age">I am {person.age}</p>}
 
       {person.isMarried && person.sex === 'm' && (
         <p className="Person__partner">{person.partnerName} is my wife</p>
